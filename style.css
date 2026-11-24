@@ -1,0 +1,61 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 56px;
+}
+
+.hero-section {
+    min-height: 90vh;
+    background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
+    padding: 60px 0;
+}
+
+.hero-img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border: 5px solid rgba(255, 255, 255, 0.2);
+}
+
+.skill-card, .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover, .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #e4e4e7;
+}
+
+body.dark-mode .bg-light {
+    background-color: #1c1c1f !important;
+}
+
+body.dark-mode .bg-white,
+body.dark-mode .skill-card,
+body.dark-mode .card {
+    background-color: #242429 !important;
+    color: #f4f4f5;
+    border-color: #34343c !important;
+}
+
+body.dark-mode .text-muted {
+    color: #a1a1aa !important;
+}
+
+body.dark-mode .skill-card:hover,
+body.dark-mode .card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.45) !important;
+}
